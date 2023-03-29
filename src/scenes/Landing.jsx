@@ -3,7 +3,6 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import ProfileImg from "../assets/profile-image.png";
 import ProfileImg1 from "../assets/Profile_image.jpeg";
 
 const Landing = ({ setSelectedPage }) => {
