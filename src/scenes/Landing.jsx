@@ -6,7 +6,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import ProfileImg from "../assets/profile-image.png";
 import ProfileImg1 from "../assets/Profile_image.jpeg";
 
-const Landing = ({ setSelecetedPage }) => {
+const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section
@@ -22,7 +22,7 @@ const Landing = ({ setSelecetedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-t-[400px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-t-[400px] h-[720px]"
               src={ProfileImg1}
             />
           </div>
@@ -47,7 +47,7 @@ const Landing = ({ setSelecetedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Veervijaysinh {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
@@ -58,8 +58,10 @@ const Landing = ({ setSelecetedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+            Hello, I'm a Senior Software Developer based in Hamilton, Ontario.
+            <br />I have a passion for developing innovative and user-friendly
+            mobile and web applications that meet the needs of clients and
+            end-users alike.
           </p>
         </motion.div>
 
@@ -78,14 +80,14 @@ const Landing = ({ setSelecetedPage }) => {
           <AnchorLink
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
-            onClick={() => setSelecetedPage("contact")}
+            onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelecetedPage("contact")}
+            onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">

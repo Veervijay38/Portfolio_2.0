@@ -1,8 +1,3 @@
-import Linkedin from "../assets/linkedin.png";
-import Twitter from "../assets/twitter.png";
-import Facebook from "../assets/facebook.png";
-import Instagram from "../assets/instagram.png";
-
 import {
   AiFillGithub,
   AiOutlineTwitter,

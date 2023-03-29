@@ -3,9 +3,11 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
+import LineGradient from "./components/LineGradient";
+import MySkills from "./scenes/MySkills";
 
 function App() {
-  const [selectedPage, setSelecetedPage] = useState("home");
+  const [selectedPage, setSelectedPage] = useState("home");
   const isDesktop = useMediaQuery("(min-width: 1060px)");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
 
@@ -13,7 +15,7 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        setSelecetedPage("home");
+        setSelectedPage("home");
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
@@ -25,16 +27,20 @@ function App() {
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
-        setSelecetedPage={setSelecetedPage}
+        setSelectedPage={setSelectedPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
         {isDesktop && (
           <DotGroup
             selectedPage={selectedPage}
-            setSelectedPage={setSelecetedPage}
+            setSelectedPage={setSelectedPage}
           />
         )}
-        <Landing setSelecetedPage={setSelecetedPage} />
+        <Landing setSelectedPage={setSelectedPage} />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full ">
+        <MySkills />
       </div>
     </div>
   );
