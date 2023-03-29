@@ -7,7 +7,7 @@ import LineGradient from "./components/LineGradient";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
 import Testimonials from "./scenes/Testimonials";
-
+import Contact from "./scenes/Contacts";
 import { motion } from "framer-motion";
 import Footer from "./scenes/Footer";
 
@@ -80,7 +80,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      {/* <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -88,7 +88,7 @@ function App() {
         >
           <Contact />
         </motion.div>
-      </div> */}
+      </div>
       <Footer />
     </div>
   );
