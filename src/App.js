@@ -9,6 +9,7 @@ import Projects from "./scenes/Projects";
 import Testimonials from "./scenes/Testimonials";
 
 import { motion } from "framer-motion";
+import Footer from "./scenes/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -79,7 +80,16 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      
+      {/* <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
+          <Contact />
+        </motion.div>
+      </div> */}
+      <Footer />
     </div>
   );
 }
