@@ -26,8 +26,16 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+            My technical expertise includes proficiency in
+            <span className="text-yellow font-semibold">
+              {" "}
+              JavaScript, TypeScript, React Native, React JS, Redux,
+            </span>{" "}
+            and related libraries and frameworks. I have also worked extensively
+            with various web and mobile development tools and technologies,
+            <span className="text-yellow font-semibold">
+              including Xcode, Android Studio, Tailwind, MaterialUI and Expo.
+            </span>
           </p>
         </motion.div>
 

@@ -46,7 +46,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-           <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Veervijaysinh {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
@@ -56,11 +56,19 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Hello, I'm a Senior Software Developer based in Hamilton, Ontario.
-            <br />I have a passion for developing innovative and user-friendly
-            mobile and web applications that meet the needs of clients and
-            end-users alike.
+          <p className="mt-10 mb-7 text-lg text-center md:text-start">
+            Hello, I'm a Senior Software Developer with{" "}
+            <span className="text-yellow font-semibold">5+ years</span> of{" "}
+            <span className="text-red font-semibold">React Native</span>{" "}
+            experience and{" "}
+            <span className="text-yellow font-semibold">1.2+ years</span> of{" "}
+            <span className="text-red font-semibold">React JS</span> experience.
+            I am passionate about building high-quality
+            <span className="text-blue font-semibold"> Mobile and Web </span>
+            applications that meet the needs of end-users and drive business
+            success. Throughout my career, I have honed my skills in developing
+            custom UI components, integrating third-party APIs, and optimizing
+            app performance and scalability.
           </p>
         </motion.div>
 
