@@ -13,15 +13,15 @@ const Landing = ({ setSelectedPage }) => {
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
       {/* Image section */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10 mt-16 md:mt-30 xl:mt-[150px] flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
+            className="relative z-0 ml-20 before:absolute before:-top-5 before:-left-5 before:rounded-t-[400px] xl:before:max-w-[800px] xl:before:-top-8 xl:before:-left-8
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-t-[400px] h-[720px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[800px] md:max-h-[500px] xl:max-h-[900px] rounded-t-[400px] "
               src={ProfileImg1}
             />
           </div>
@@ -34,7 +34,7 @@ const Landing = ({ setSelectedPage }) => {
         )}
       </div>
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-2/5 mt-12 md:mt-32 xl:mt-[400px]">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -46,18 +46,18 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className="text-6xl md:text-5xl xl:text-6xl font-playfair z-10 text-center md:text-start">
             Veervijaysinh {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
+              before:absolute before:-left-[30px] before:-top-[90px] before:z-[-1]"
             >
               Rana
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-lg text-center md:text-start">
-            Hello, I'm a Senior Software Developer with{" "}
+          <p className="mt-10 mb-7 md:text-md xl:text-xl text-center md:text-start">
+            Hello 👋🏻, I'm a Senior Software Developer with{" "}
             <span className="text-yellow font-semibold">5+ years</span> of{" "}
             <span className="text-red font-semibold">React Native</span>{" "}
             experience and{" "}
