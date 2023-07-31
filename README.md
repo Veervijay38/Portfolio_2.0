@@ -3,7 +3,7 @@
   <a href="https://veervijaysinh-rana-portfolio.vercel.app/" target="_blank">veervijaysinh-portfolio</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./src/Assets/Portfolio2.0.png" />
+  <img alt="Demo" src="./src/assets/Portfolio2.0.png" />
 </div>
 
 <br/>
