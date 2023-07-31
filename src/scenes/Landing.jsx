@@ -58,10 +58,10 @@ const Landing = ({ setSelectedPage }) => {
 
           <p className="mt-10 mb-7 md:text-md xl:text-xl text-center md:text-start">
             Hello 👋🏻, I'm a Senior Software Developer with{" "}
-            <span className="text-yellow font-semibold">5+ years</span> of{" "}
+            <span className="text-yellow font-semibold">6+ years</span> of{" "}
             <span className="text-red font-semibold">React Native</span>{" "}
             experience and{" "}
-            <span className="text-yellow font-semibold">1.2+ years</span> of{" "}
+            <span className="text-yellow font-semibold">1.5+ years</span> of{" "}
             <span className="text-red font-semibold">React JS</span> experience.
             I am passionate about building high-quality
             <span className="text-blue font-semibold"> Mobile and Web </span>
